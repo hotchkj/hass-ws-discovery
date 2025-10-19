@@ -1,0 +1,56 @@
+---
+name: WS-Discovery
+version: 0.1.0
+slug: ws-discovery
+description: WS-Discovery (wsdd) daemon for making Linux/Samba servers visible in Windows Network Browser
+arch:
+  - amd64
+  - aarch64
+  - armhf
+  - armv7
+  - i386
+startup: services
+boot: auto
+host_network: true
+options:
+  interface: ""
+  hoplimit: 1
+  uuid: ""
+  verbose: false
+  domain: ""
+  hostname: ""
+  workgroup: "WORKGROUP"
+  no_autostart: false
+  no_http: false
+  ipv4only: false
+  ipv6only: false
+  shortlog: false
+  preserve_case: false
+  chroot: ""
+  user: ""
+  discovery: false
+  listen: ""
+  no_host: false
+  metadata_timeout: ""
+  source_port: ""
+schema:
+  interface: str?
+  hoplimit: int(1,255)?
+  uuid: str?
+  verbose: bool
+  domain: str?
+  hostname: str?
+  workgroup: str
+  no_autostart: bool
+  no_http: bool
+  ipv4only: bool
+  ipv6only: bool
+  shortlog: bool
+  preserve_case: bool
+  chroot: str?
+  user: str?
+  discovery: bool
+  listen: str?
+  no_host: bool
+  metadata_timeout: str?
+  source_port: str?
