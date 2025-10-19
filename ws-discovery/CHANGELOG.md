@@ -2,15 +2,6 @@
 
 All notable changes to this add-on will be documented in this file.
 
-## [0.1.3] - 2025-10-19
-
-### Fixed
-- Remove PNG files from Git LFS tracking so add-on icon displays correctly in Home Assistant
-- Home Assistant Supervisor cannot fetch LFS files, causing icons to appear broken
-
-### Changed
-- Update .gitattributes to mark binary files but exclude PNG from LFS
-
 ## [0.1.0] - 2025-10-19
 
 ### Added
@@ -27,3 +18,4 @@ All notable changes to this add-on will be documented in this file.
   - Timing options: metadata-timeout, source-port
 - Host network mode for proper WS-Discovery functionality
 - Configuration via YAML format (config.yaml)
+- Home Assistant Supervisor cannot fetch LFS files, causing icons to appear broken
