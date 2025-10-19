@@ -48,7 +48,7 @@ interface: ""
 verbose: false
 ```
 
-For detailed configuration options, see the [add-on README](ws-discovery/README.md). The add-on supports all wsdd command line options including:
+For detailed configuration options, see the [add-on DOCS](ws-discovery/DOCS.md). The add-on supports all wsdd command line options including:
 
 - **Basic options**: workgroup, hostname, domain, interface, verbose
 - **Advanced options**: hoplimit, uuid, ipv4only, ipv6only, preserve_case, and more
