@@ -18,7 +18,7 @@ This add-on uses [wsdd](https://github.com/christgau/wsdd) by Steffen Christgau 
 
 1. Navigate to the Supervisor Add-on Store in Home Assistant
 2. Click on the three dots in the top right corner and select "Repositories"
-3. Add this repository URL: `https://github.com/hotchkj/Home-Assistant-WSD`
+3. Add this repository URL: `https://github.com/hotchkj/hass-ws-discovery`
 4. Find "WS-Discovery" in the add-on store and click it
 5. Click "Install"
 6. Configure the add-on (see Configuration section below)
@@ -27,7 +27,7 @@ This add-on uses [wsdd](https://github.com/christgau/wsdd) by Steffen Christgau 
 
 Alternatively, click the button below to add this repository automatically:
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with this repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhotchkj%2FHome-Assistant-WSD)
+[![Open your Home Assistant instance and show the add add-on repository dialog with this repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhotchkj%2Fhass-ws-discovery)
 
 ## Configuration
 
@@ -45,15 +45,6 @@ For detailed configuration options, see the [add-on README](ws-discovery/README.
 
 - **Basic options**: workgroup, hostname, domain, interface, verbose
 - **Advanced options**: hoplimit, uuid, ipv4only, ipv6only, preserve_case, and more
-
-
-## Security
-
-This add-on requires access to the host network to receive and send multicast packets used by WS-Discovery. Running with `host_network: true` allows the add-on to see and use network interfaces directly which is necessary for discovery protocols but increases the add-on's exposure to your local network.
-
-Recommendations:
-- Only install add-ons you trust and review their source code when possible.
-- Be aware that `host_network` lets the add-on listen on all interfaces; do not run this add-on on untrusted networks.
 
 ### Common Options
 
@@ -78,7 +69,7 @@ Got questions?
 
 You could open an issue on GitHub:
 
-- [Open an issue](https://github.com/hotchkj/Home-Assistant-WSD/issues)
+- [Open an issue](https://github.com/hotchkj/hass-ws-discovery/issues)
 
 ## License
 
