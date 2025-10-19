@@ -29,6 +29,13 @@ Alternatively, click the button below to add this repository automatically:
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with this repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhotchkj%2Fhass-ws-discovery)
 
+## Security
+This add-on requires access to the host network to receive and send multicast packets used by WS-Discovery. Running with `host_network: true` allows the add-on to see and use network interfaces directly which is necessary for discovery protocols but increases the add-on's exposure to your local network.
+
+Recommendations:
+- Only install add-ons you trust and review their source code when possible.
+- Be aware that `host_network` lets the add-on listen on all interfaces; do not run this add-on on untrusted networks.
+
 ## Configuration
 
 Add-on configuration example:
