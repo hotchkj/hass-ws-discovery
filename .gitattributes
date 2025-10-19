@@ -22,9 +22,6 @@ Dockerfile* text eol=lf
 .gitattributes text eol=lf
 
 # Binary files - do not normalize line endings
-*.png filter=lfs diff=lfs merge=lfs -text binary
-*.jpg filter=lfs diff=lfs merge=lfs -text binary
-*.jpeg filter=lfs diff=lfs merge=lfs -text binary
-*.gif filter=lfs diff=lfs merge=lfs -text binary
-*.ico filter=lfs diff=lfs merge=lfs -text binary
-*.svg -text binary
+# Note: PNG files are NOT in LFS because Home Assistant Supervisor
+# cannot fetch LFS files when loading add-on icons
+*.png -text binary
